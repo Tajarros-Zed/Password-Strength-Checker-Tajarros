@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="strengthener__parent-container">
+        <div class="strengthener__child-container">
+            <h1 class="strengthener__main-title_element">
+                Password Strengthener
+            </h1>
+            <div class="strengthener__password-container">
+                <div class="strengthener__password-title">
+                    <span class="strengthener__subtitle">Password:</span>
+                </div>
+                <div class="strengthener__password-elements">
+                    <span class="strengthener__lock-icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="strengthener__password_input" id="password" placeholder="Enter Password..."/>
+                    <button type="button" id="togglePassword"><i class="fa-solid fa-eye"></i></button>
+                </div>
+            </div>
+            <p class="strengthener__text" id="strengthText">Password Strength: <span id="strengthIndicator"></span></p>
+            <div class="strengthener__length-container">
+                <div class="strength" id="strength"></div>
+            </div>
+            <button type="button" class="strengthener__button-copied" id="copiedButton" disabled>Copied Password</button>
+        </div>  
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/d870978cd1.js" crossorigin="anonymous"></script>
+</body>
+</html>
